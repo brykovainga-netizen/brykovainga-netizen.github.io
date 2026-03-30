@@ -1,81 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Вопросы — Спорт Территория</title>
-  <meta name="description" content="Ответы на частые вопросы: возраст, форма занятий, пробное занятие, как записаться и советы для новичков." />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы - Спорт Территория</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
+        header { background-color: #1E3A8A; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #F97316; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        main { max-width: 1000px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 10px; }
+        h1 { color: #1E3A8A; }
+        .question { margin-bottom: 20px; }
+        .question h3 { color: #F97316; margin-bottom: 5px; }
+        footer { background-color: #1E3A8A; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Спорт Территория">
-        <div class="logo" aria-hidden="true">ST</div>
-        <div class="brand-title"><strong>Спорт Территория</strong><span>тренировки для всех</span></div>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-nav" aria-expanded="false" data-menu-toggle>
-        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-      <nav id="primary-nav" class="nav" data-menu-nav>
-        <a href="./index.html">Главная</a>
-        <a href="./catalog.html">Каталог</a>
-        <a href="./about.html">О нас</a>
-        <a href="./faq.html" aria-current="page">Вопросы</a>
-        <a href="./contacts.html">Контакты</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page">
-    <div class="container">
-      <section class="hero" aria-labelledby="faq-title">
-        <div class="hero-card">
-          <div class="kicker"><span class="pill">FAQ</span></div>
-          <h1 id="faq-title">Частые вопросы</h1>
-          <p class="lead">Ответы на то, что чаще всего интересует родителей и новичков.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="./contacts.html">Записаться</a>
-            <a class="btn btn-ghost" href="./catalog.html">Перейти к каталогу</a>
-          </div>
+    <header>
+        <h1>Спорт Территория</h1>
+        <p>Весёлые тренировки для детей</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="faq.html">Вопросы</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+    <main>
+        <h1>Часто задаваемые вопросы</h1>
+        <div class="question">
+            <h3>С какого возраста можно заниматься?</h3>
+            <p>Мы принимаем детей от 5 до 14 лет. Есть группы для разных возрастов.</p>
         </div>
-        <div class="hero-media" role="img" aria-label="Тренировки и поддержка">
-          <img src="https://source.unsplash.com/1200x900/?sport,teamwork,training" alt="Тренировки и поддержка" loading="lazy" />
-          <div class="media-badge"><strong>Мы всё объясняем</strong><span>до и во время занятий</span></div>
+        <div class="question">
+            <h3>Что нужно брать с собой?</h3>
+            <p>Удобную спортивную форму, сменную обувь, бутылочку воды и хорошее настроение!</p>
         </div>
-      </section>
-
-      <section class="section faq" aria-labelledby="faq-list">
-        <div class="section-title"><h2 id="faq-list">Ответы</h2><p>5 вопросов</p></div>
-        <details open>
-          <summary>С какого возраста можно приходить?<span class="chev" aria-hidden="true"></span></summary>
-          <div class="answer">Мы подбираем группы под возраст и уровень подготовки. Напишите нам в форме на странице «Контакты» — подскажем оптимальный формат для вашего ребёнка или взрослого.</div>
-        </details>
-        <details>
-          <summary>Какую форму нужно взять?<span class="chev" aria-hidden="true"></span></summary>
-          <div class="answer">Обычно достаточно удобной спортивной одежды и обуви, а также бутылочки воды. Точный список можно уточнить у тренера перед первым занятием.</div>
-        </details>
-        <details>
-          <summary>Есть ли пробное занятие?<span class="chev" aria-hidden="true"></span></summary>
-          <div class="answer">Да. Пробное занятие помогает понять формат, познакомиться с тренерами и подобрать нагрузку. Оставьте заявку в «Контактах», и мы согласуем дату.</div>
-        </details>
-        <details>
-          <summary>Как записаться на занятия?<span class="chev" aria-hidden="true"></span></summary>
-          <div class="answer">Перейдите на страницу «Контакты», заполните форму и укажите интересующий формат. Мы ответим и предложим подходящее расписание.</div>
-        </details>
-        <details>
-          <summary>Много ли новичков приходит к вам?<span class="chev" aria-hidden="true"></span></summary>
-          <div class="answer">Да, новичков всегда много. Тренеры объясняют базу, поддерживают в первые занятия и помогают быстрее адаптироваться к команде и тренировочному процессу.</div>
-        </details>
-      </section>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">© 2026 Спорт Территория. Все права защищены.</div>
-  </footer>
-
-  <script src="./assets/js/main.js" defer></script>
+        <div class="question">
+            <h3>Есть ли пробное занятие?</h3>
+            <p>Да, первое занятие бесплатное. Вы можете прийти и познакомиться с тренерами.</p>
+        </div>
+        <div class="question">
+            <h3>Как записаться?</h3>
+            <p>Заполните форму на странице «Контакты», и мы свяжемся с вами.</p>
+        </div>
+        <div class="question">
+            <h3>Можно ли заниматься, если ребёнок никогда не занимался спортом?</h3>
+            <p>Конечно! Мы работаем с детьми разного уровня подготовки. Главное — желание!</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Спорт Территория. Все права защищены.</p>
+    </footer>
 </body>
 </html>
-
