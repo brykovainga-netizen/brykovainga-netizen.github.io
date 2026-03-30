@@ -5,15 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вопросы - Спорт Территория</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
-        header { background-color: #1E3A8A; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #F97316; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        main { max-width: 1000px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 10px; }
-        h1 { color: #1E3A8A; }
-        .question { margin-bottom: 20px; }
-        .question h3 { color: #F97316; margin-bottom: 5px; }
-        footer { background-color: #1E3A8A; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #F97316;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1E3A8A;
+        }
+        /* Аккордеон */
+        details {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            padding: 10px 15px;
+        }
+        details summary {
+            font-weight: bold;
+            color: #1E3A8A;
+            cursor: pointer;
+            outline: none;
+        }
+        details[open] {
+            background: #fff;
+        }
+        .answer {
+            margin-top: 10px;
+            padding-left: 10px;
+            border-left: 3px solid #F97316;
+            color: #333;
+        }
+        footer {
+            background-color: #1E3A8A;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -30,26 +88,31 @@
     </nav>
     <main>
         <h1>Часто задаваемые вопросы</h1>
-        <div class="question">
-            <h3>С какого возраста можно заниматься?</h3>
-            <p>Мы принимаем детей от 5 до 14 лет. Есть группы для разных возрастов.</p>
-        </div>
-        <div class="question">
-            <h3>Что нужно брать с собой?</h3>
-            <p>Удобную спортивную форму, сменную обувь, бутылочку воды и хорошее настроение!</p>
-        </div>
-        <div class="question">
-            <h3>Есть ли пробное занятие?</h3>
-            <p>Да, первое занятие бесплатное. Вы можете прийти и познакомиться с тренерами.</p>
-        </div>
-        <div class="question">
-            <h3>Как записаться?</h3>
-            <p>Заполните форму на странице «Контакты», и мы свяжемся с вами.</p>
-        </div>
-        <div class="question">
-            <h3>Можно ли заниматься, если ребёнок никогда не занимался спортом?</h3>
-            <p>Конечно! Мы работаем с детьми разного уровня подготовки. Главное — желание!</p>
-        </div>
+
+        <details>
+            <summary>С какого возраста можно заниматься?</summary>
+            <div class="answer">Мы принимаем детей от 5 до 14 лет. Есть группы для разных возрастов.</div>
+        </details>
+
+        <details>
+            <summary>Что нужно брать с собой?</summary>
+            <div class="answer">Удобную спортивную форму, сменную обувь, бутылочку воды и хорошее настроение!</div>
+        </details>
+
+        <details>
+            <summary>Есть ли пробное занятие?</summary>
+            <div class="answer">Да, первое занятие бесплатное. Вы можете прийти и познакомиться с тренерами.</div>
+        </details>
+
+        <details>
+            <summary>Как записаться?</summary>
+            <div class="answer">Заполните форму на странице «Контакты», и мы свяжемся с вами.</div>
+        </details>
+
+        <details>
+            <summary>Можно ли заниматься, если ребёнок никогда не занимался спортом?</summary>
+            <div class="answer">Конечно! Мы работаем с детьми разного уровня подготовки. Главное — желание!</div>
+        </details>
     </main>
     <footer>
         <p>© 2026 Спорт Территория. Все права защищены.</p>
