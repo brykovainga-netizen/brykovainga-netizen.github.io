@@ -1,39 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас - Спорт Территория</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
-        header { background-color: #1E3A8A; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #F97316; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        main { max-width: 1000px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 10px; }
-        h1 { color: #1E3A8A; }
-        footer { background-color: #1E3A8A; color: white; text-align: center; padding: 15px; margin-top: 20px; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Спорт Территория</h1>
-        <p>Весёлые тренировки для детей</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас — Спорт Территория</title>
+    <meta
+      name="description"
+      content="Расскажем о тренерах и подходе к тренировкам в «Спорт Территория»: дружно, безопасно и с результатом."
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Спорт Территория">
+          <div class="logo" aria-hidden="true">ST</div>
+          <div class="brand-title">
+            <strong>Спорт Территория</strong>
+            <span>тренировки для всех</span>
+          </div>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav id="primary-nav" class="nav" data-menu-nav>
+          <a href="./index.html">Главная</a>
+          <a href="./catalog.html">Каталог</a>
+          <a href="./about.html" aria-current="page">О нас</a>
+          <a href="./faq.html">Вопросы</a>
+          <a href="./contacts.html">Контакты</a>
+        </nav>
+      </div>
     </header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="about.html">О нас</a>
-        <a href="faq.html">Вопросы</a>
-        <a href="contacts.html">Контакты</a>
-    </nav>
-    <main>
-        <h1>О нашей организации</h1>
-        <p>Спортивная организация «Спорт Территория» создана, чтобы сделать спорт доступным и интересным для каждого ребёнка. Мы верим, что движение — это радость, а дружная команда помогает достигать любых целей.</p>
-        <p>Наши тренеры — опытные педагоги, которые любят детей и знают, как увлечь их спортом. Мы проводим занятия в уютном зале, используем современное оборудование и всегда рады новым участникам.</p>
-        <p>Присоединяйтесь к нам — стань сильным, быстрым и дружным!</p>
+
+    <main class="page">
+      <div class="container">
+        <section class="hero" aria-labelledby="about-title">
+          <div class="hero-card">
+            <div class="kicker">
+              <span class="pill">Наша миссия</span>
+            </div>
+            <h1 id="about-title">О «Спорт Территория»</h1>
+            <p class="lead">
+              Мы создаём пространство, где спорт объединяет людей: дети растут уверенно, а взрослые
+              поддерживают активный стиль жизни.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="./catalog.html">Выбрать направление</a>
+              <a class="btn btn-ghost" href="./contacts.html">Связаться</a>
+            </div>
+          </div>
+
+          <div class="hero-media" role="img" aria-label="Командная поддержка">
+            <img
+              src="https://source.unsplash.com/1200x900/?team,coach,sport"
+              alt="Команда и тренер"
+              loading="lazy"
+            />
+            <div class="media-badge">
+              <strong>Подход с заботой</strong>
+              <span>к каждому участнику</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="about-text">
+          <div class="section-title">
+            <h2 id="about-text">Коротко о главном</h2>
+            <p>три абзаца</p>
+          </div>
+
+          <div class="two-col">
+            <div class="card card--tight">
+              <p>
+                «Спорт Территория» — это спортивная организация, где тренировки проходят в дружелюбной и
+                безопасной атмосфере. Мы делаем спорт понятным: объясняем технику простыми словами,
+                поддерживаем и помогаем прогрессировать без страха ошибок.
+              </p>
+            </div>
+            <div class="card card--tight">
+              <p>
+                Наши тренеры — опытные специалисты, которые умеют работать с разными возрастами и уровнями
+                подготовки. Они наблюдают за тем, как развивается каждый ребёнок, и корректируют нагрузки
+                так, чтобы результат был достижимым.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px; grid-column: span 12;">
+            <p>
+              Мы верим, что правильный подход даёт больше, чем просто спортивные навыки: формируются дисциплина,
+              уверенность, умение работать в команде и уважение к себе и другим. Именно поэтому у нас
+              весёлые занятия, где каждый может стать сильным, быстрым и дружным.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-        <p>© 2026 Спорт Территория. Все права защищены.</p>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">© 2026 Спорт Территория. Все права защищены.</div>
     </footer>
-</body>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
 </html>
+

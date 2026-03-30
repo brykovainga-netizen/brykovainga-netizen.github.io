@@ -1,58 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог - Спорт Территория</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; }
-        header { background-color: #1E3A8A; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #F97316; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 1000px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 10px; }
-        h1, h2 { color: #1E3A8A; }
-        .service { border-bottom: 1px solid #ddd; padding: 15px 0; }
-        footer { background-color: #1E3A8A; color: white; text-align: center; padding: 15px; margin-top: 20px; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Спорт Территория</h1>
-        <p>Весёлые тренировки для детей</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог — Спорт Территория: услуги и цены</title>
+    <meta
+      name="description"
+      content="Узнайте стоимость групповых тренировок, индивидуальных занятий, спортивных праздников и летнего лагеря «Спорт Территория»."
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Спорт Территория">
+          <div class="logo" aria-hidden="true">ST</div>
+          <div class="brand-title">
+            <strong>Спорт Территория</strong>
+            <span>тренировки для всех</span>
+          </div>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav id="primary-nav" class="nav" data-menu-nav>
+          <a href="./index.html">Главная</a>
+          <a href="./catalog.html" aria-current="page">Каталог</a>
+          <a href="./about.html">О нас</a>
+          <a href="./faq.html">Вопросы</a>
+          <a href="./contacts.html">Контакты</a>
+        </nav>
+      </div>
     </header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="about.html">О нас</a>
-        <a href="faq.html">Вопросы</a>
-        <a href="contacts.html">Контакты</a>
-    </nav>
-    <main>
-        <h1>Наши услуги</h1>
-        <div class="service">
-            <h2>Групповые тренировки</h2>
-            <p>Весёлые занятия в команде. Учимся работать вместе и поддерживать друг друга.</p>
-            <p><strong>Стоимость:</strong> 2000 руб./мес</p>
-        </div>
-        <div class="service">
-            <h2>Индивидуальные занятия</h2>
-            <p>Персональный подход. Тренер работает только с одним ребёнком.</p>
-            <p><strong>Стоимость:</strong> 1000 руб./занятие</p>
-        </div>
-        <div class="service">
-            <h2>Спортивные праздники</h2>
-            <p>Дни рождения, конкурсы, эстафеты. Веселье для всей компании!</p>
-            <p><strong>Стоимость:</strong> от 5000 руб.</p>
-        </div>
-        <div class="service">
-            <h2>Летний лагерь</h2>
-            <p>Активный отдых на каникулах. Спорт, игры, новые друзья.</p>
-            <p><strong>Стоимость:</strong> 15000 руб./смена</p>
-        </div>
+
+    <main class="page">
+      <div class="container">
+        <section class="hero" aria-labelledby="catalog-title">
+          <div class="hero-card">
+            <div class="kicker">
+              <span class="pill">Услуги и цены</span>
+            </div>
+            <h1 id="catalog-title">Каталог «Спорт Территория»</h1>
+            <p class="lead">
+              Выберите формат занятий — подберём нагрузку и поможем достигать целей с улыбкой.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="./contacts.html">Записаться</a>
+              <a class="btn btn-ghost" href="./faq.html">Ответы на вопросы</a>
+            </div>
+          </div>
+
+          <div class="hero-media" role="img" aria-label="Спортивные тренировки">
+            <img
+              src="https://source.unsplash.com/1200x900/?sport,team,training"
+              alt="Спортивные тренировки"
+              loading="lazy"
+            />
+            <div class="media-badge">
+              <strong>Тренировки для разных возрастов</strong>
+              <span>группы и индивидуально</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="catalog-items">
+          <div class="section-title">
+            <h2 id="catalog-items">Направления</h2>
+            <p>каждая услуга с ценой</p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="card-header">
+                <div class="icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 21V11a4 4 0 0 0-8 0v10" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 7V3" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M8 21h8" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3>Групповые тренировки</h3>
+              </div>
+              <img
+                src="https://source.unsplash.com/800x520/?kids,group,training"
+                alt="Групповые тренировки"
+                loading="lazy"
+                style="border-radius:14px; border:1px solid rgba(2,6,23,.08); margin-top:10px; width:100%; object-fit:cover;"
+              />
+              <p class="price">2000 руб/мес</p>
+              <p>Командная работа, техника и развитие выносливости.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-header">
+                <div class="icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7l3-7z" stroke="#1E3A8A" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3>Индивидуальные занятия</h3>
+              </div>
+              <img
+                src="https://source.unsplash.com/800x520/?coach,training,fitness"
+                alt="Индивидуальные занятия"
+                loading="lazy"
+                style="border-radius:14px; border:1px solid rgba(2,6,23,.08); margin-top:10px; width:100%; object-fit:cover;"
+              />
+              <p class="price">1000 руб/занятие</p>
+              <p>Подбор программы под цель и уровень подготовки.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-header">
+                <div class="icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12c2-5 14-5 16 0-2 5-14 5-16 0z" stroke="#F97316" stroke-width="2" stroke-linecap="round" />
+                    <path d="M12 8v8" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3>Спортивные праздники</h3>
+              </div>
+              <img
+                src="https://source.unsplash.com/800x520/?birthday,sports,kids"
+                alt="Спортивные праздники"
+                loading="lazy"
+                style="border-radius:14px; border:1px solid rgba(2,6,23,.08); margin-top:10px; width:100%; object-fit:cover;"
+              />
+              <p class="price">от 5000 руб</p>
+              <p>Эстафеты, игры и незабываемые эмоции для детей и родителей.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-header">
+                <div class="icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 21h18" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 2v7" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M7 9c2 2 8 2 10 0" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3>Летний лагерь</h3>
+              </div>
+              <img
+                src="https://source.unsplash.com/800x520/?summer,camp,kids,play"
+                alt="Летний лагерь"
+                loading="lazy"
+                style="border-radius:14px; border:1px solid rgba(2,6,23,.08); margin-top:10px; width:100%; object-fit:cover;"
+              />
+              <p class="price">15000 руб/смена</p>
+              <p>Активности на свежем воздухе и спорт каждый день смены.</p>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-        <p>© 2026 Спорт Территория. Все права защищены.</p>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">© 2026 Спорт Территория. Все права защищены.</div>
     </footer>
-</body>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
 </html>
+
